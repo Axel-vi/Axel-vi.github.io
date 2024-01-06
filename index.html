@@ -30,32 +30,28 @@
         }        
         .project {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
             margin-bottom: 20px;
-            position: relative; /* Ajout de cette ligne */
+            position: relative;
         }
 
         .project-text {
             flex: 1;
-            margin-right: 20px;
+            margin-bottom: 10px;
         }
 
         .project-images {
-            flex: 1;
             display: flex;
             justify-content: flex-end;
+            align-items: flex-start; /* Modification de cette ligne */
             position: relative;
+            max-width: 300px;
         }
 
         .project-images img {
             max-width: 100%;
             height: auto;
-            position: absolute; /* Ajout de cette ligne */
-            top: 0; /* Ajout de cette ligne */
-            left: 0; /* Ajout de cette ligne */
-            opacity: 1; /* Ajout de cette ligne */
             transition: opacity 0.5s ease-in-out;
         }
 
