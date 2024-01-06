@@ -34,6 +34,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+            position: relative; /* Ajout de cette ligne */
         }
 
         .project-text {
@@ -43,16 +44,18 @@
 
         .project-images {
             flex: 1;
+            display: flex;
+            justify-content: flex-end;
             position: relative;
-            overflow: hidden;
         }
 
         .project-images img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
+            position: absolute; /* Ajout de cette ligne */
+            top: 0; /* Ajout de cette ligne */
+            left: 0; /* Ajout de cette ligne */
+            opacity: 1; /* Ajout de cette ligne */
             transition: opacity 0.5s ease-in-out;
         }
 
@@ -108,7 +111,7 @@
         <ul>
             <li><strong>2022 - present ｜Ecole polytechnique, Palaiseau, France </strong> - France’s leading engineering school. Currently in my second year, specializing in computer science, physics, and applied mathematics.</li>
         </ul>
-                <ul>
+        <ul>
             <li><strong>2020 - 2022 ｜Lycée Blaise Pascal, Orsay, France  </strong> - “Classe préparatoire“, a two-year intensive program in math and physics preparing for the competitive entrance exams to top French engineering schools. </li>
         </ul>
     </section>
@@ -133,7 +136,7 @@
 
         <div class="project">
             <div class="project-text">
-                <h3>Project 2: [Project Title 2]</h3>
+                <h3>Project 2: Gamejam</h3>
                 <ul>
                     <li><strong>Languages/Technologies:</strong> [List technologies]</li>
                     <li><strong>Description:</strong> [Brief description]</li>
@@ -141,12 +144,12 @@
                 </ul>
             </div>
             <div class="project-images">
-                <img src="[Image URL 2a]" alt="Project 2 Image A">
-                <img src="[Image URL 2b]" alt="Project 2 Image B">
+                <!-- Replace the following placeholders with the actual image URLs -->
+                <img src="https://raw.githubusercontent.com/Axel-vi/Axel-vi.github.io/main/image/Screenshot%202024-01-07%2000-04-07.png" alt="Project 2 Image A">
+                <img src="https://raw.githubusercontent.com/Axel-vi/Axel-vi.github.io/main/image/Screenshot%202024-01-07%2000-06-31.png" alt="Project 2 Image B">
             </div>
         </div>
     </section>
-
 
     <section>
         <h2>Contact Information</h2>
@@ -162,4 +165,3 @@
 
 </body>
 </html>
-
