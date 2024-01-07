@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Computer Science Portfolio</title>
+    <title>Axel V - Computer Science Portfolio</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -30,33 +30,46 @@
         }        
         .project {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             margin-bottom: 20px;
-            position: relative;
         }
 
         .project-text {
             flex: 1;
-            margin-bottom: 10px;
+            margin-right: 20px;
         }
 
         .project-images {
+            flex-shrink: 0;
+            width: 200px;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .project-image-container {
             display: flex;
-            justify-content: flex-end;
-            align-items: flex-start; /* Modification de cette ligne */
-            position: relative;
-            max-width: 300px;
+            flex-direction: column;
         }
 
         .project-images img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
             transition: opacity 0.5s ease-in-out;
         }
 
         .project-images img:hover {
             opacity: 0;
+        }
+
+        .project-images img:first-child {
+            margin-bottom: -30px; 
+            margin-right: -10px; 
+            margin-left: 30px; 
+        }
+
+        .project-images img:last-child {
+            margin-top: -20px; 
+            margin-left: -15px; 
         }
 
         h2, h3 {
@@ -88,17 +101,15 @@
 <body>
 
     <header>
-        <h1>Name</h1>
-        <p>Computer Science Student</p>
+        <h1>Axel V</h1>
+        <p>Second-year student at Ecole Polytechnique</p>
     </header>
 
     <section>
         <h2>About Me</h2>
         <p>
-            I am a second-year student at Ecole Polytechnique passionate about computer science. 
-            Currently, I am pursuing opportunities to apply my skills and learn in a real-world environment. 
-            I am particularly interested in joining Riot Games for a software development internship, 
-            driven by my love for their game, "League of Legends," where I hold a Master rank.
+            I am a second-year student at Ecole Polytechnique passionate about computer science. Currently, I am pursuing opportunities to apply my skills and learn in a real-world environment. I have always been a fan of video games, and I am eager to contribute to the future of the gaming industry, which is poised for transformation through advancements in AI and other cutting-edge technologies
+            
         </p>
     </section>
 
@@ -119,44 +130,98 @@
             <div class="project-text">
                 <h3>Project 1: Modeling and Evolution of a Space Debris Environment</h3>
                 <ul>
-                    <li><strong>Languages/Technologies:</strong> [List technologies]</li>
-                    <li><strong>Description:</strong> [Brief description]</li>
-                    <!-- Add more details as needed -->
+                    <li><strong>Languages/Technologies:</strong> Python/Astrophysics</li>
+                    <li><strong>Description:</strong> Aimed to predict the evolution of space debris in the Earth's atmosphere over time, assessing the potential danger they might pose. I used Python to model and analyze the space debris environment, employing various techniques to forecast its trajectory and density.</li>
                 </ul>
             </div>
             <div class="project-images">
-                <img src="https://raw.githubusercontent.com/Axel-vi/Axel-vi.github.io/main/image/Space_debris_graph.JPG" alt="Project 1 Image A">
-                <img src="https://raw.githubusercontent.com/Axel-vi/Axel-vi.github.io/main/image/Space_debris.jpg" alt="Project 1 Image B">
+                <div class="project-image-container">
+                    <img src="https://raw.githubusercontent.com/Axel-vi/Axel-vi.github.io/main/image/Space_debris.jpg" alt="Project 1 Image A">
+                    <img src="https://raw.githubusercontent.com/Axel-vi/Axel-vi.github.io/main/image/Space_debris_graph.JPG" alt="Project 1 Image B">
+                </div>
             </div>
         </div>
 
         <div class="project">
             <div class="project-text">
-                <h3>Project 2: Gamejam</h3>
+                <h3>Project 2: Arcade Gamejam</h3>
                 <ul>
-                    <li><strong>Languages/Technologies:</strong> [List technologies]</li>
-                    <li><strong>Description:</strong> [Brief description]</li>
-                    <!-- Add more details as needed -->
+                    <li><strong>Languages/Technologies:</strong> Python(Pygame)/Git</li>
+                    <li><strong>Description:</strong> A two-week exploration of Pygame, with the goal of creating a retro arcade game. Our team decided to develop a space invaders-style game, delving into game development and showcasing our skills in a short timeframe.</li>
+                    <li><strong>Final Ranking:</strong> 2nd out of 28 participants</li>
+
                 </ul>
             </div>
             <div class="project-images">
-                <!-- Replace the following placeholders with the actual image URLs -->
-                <img src="https://raw.githubusercontent.com/Axel-vi/Axel-vi.github.io/main/image/Screenshot%202024-01-07%2000-04-07.png" alt="Project 2 Image A">
-                <img src="https://raw.githubusercontent.com/Axel-vi/Axel-vi.github.io/main/image/Screenshot%202024-01-07%2000-06-31.png" alt="Project 2 Image B">
+                <div class="project-image-container">
+                    <img src="https://raw.githubusercontent.com/Axel-vi/Axel-vi.github.io/main/image/Screenshot%202024-01-07%2000-04-07.png" alt="Project 2 Image A">
+                    <img src="https://raw.githubusercontent.com/Axel-vi/Axel-vi.github.io/main/image/Screenshot%202024-01-07%2000-06-31.png" alt="Project 2 Image B">
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-text">
+                <h3>Project 3: 3D Conformation of DNA: An Evolutionary Algorithm Approach</h3>
+                <ul>
+                    <li><strong>Languages/Technologies:</strong> Java/Git</li>
+                    <li><strong>Description:</strong> Collaborative team project: Enhanced 3D DNA conformation modeling using an evolutionary algorithm in Python. Focus on accurately representing circular plasmids.</li>
+                </ul>
+            </div>
+            <div class="project-images">
+                <div class="project-image-container">
+                    <img src="https://raw.githubusercontent.com/Axel-vi/Axel-vi.github.io/main/image/cellular-microscopic-dna.jpg" alt="Project 3 Image A">
+                </div>
             </div>
         </div>
     </section>
+<section>
+    <h2>Experience</h2>
+
+<div class="experience">
+    <h3>09/2023 - Present | Mathematics Examiner, Lycée Blaise Pascal, Orsay, France</h3>
+    <ul>
+        <li>• Assisted students in preparing for oral entrance exams to top French engineering schools.</li>
+        <li>• Contributed to monitoring the progress of 45 students.</li>
+    </ul>
+</div>
+
+
+    <div class="experience">
+        <h3>10/2022 - 04/2023 | Military Training - Internship in the Police, Reims, France</h3>
+        <ul>
+            <li>• Participated in key activities ensuring public safety, including patrols and investigations.</li>
+            <li>• Provided academic support to young soldiers preparing for a competitive exam to advance in ranks.</li>
+        </ul>
+    </div>
+</section>
+<section>
+    <h2>Languages and Technologies</h2>
+    <ul>
+        <li>French: Native Language</li>
+        <li>English: Fluent (C1)</li>
+        <li>German: Upper-intermediate (B2)</li>
+    </ul>
+    <h2>Technologies</h2>
+    <ul>
+        <li>Python: Proficient</li>
+        <li>Git: Proficient</li>
+        <li>Java: Proficient</li>
+        <li>Pytorch: Basic Knowledge</li>
+        <li>C#: Basic Knowledge</li>
+        <li>Unity: Basic Knowledge</li>
+    </ul>
+</section>
 
     <section>
         <h2>Contact Information</h2>
         <ul>
-            <li><strong>Email:</strong> MAIL</li>
-            <!-- Add more contact information as needed -->
+            <li><strong>Email:</strong> axel.viselthier@polytechnique.edu</li>
         </ul>
     </section>
 
     <footer>
-        <p>&copy; 2024 Name | Designed with passion</p>
+        <p>&copy; 2024 Axel V</p>
     </footer>
 
 </body>
